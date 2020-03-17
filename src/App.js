@@ -51,6 +51,7 @@ class App extends Component {
             updateFeatures={this.state.updateFeature}
             USCurrencyFormat = {this.state.USCurrencyFormat}
             selected={this.state.selected}
+            features={this.props.features}
           />
           {/*This title stays in the cart*/}
           <section className="main__summary">
@@ -58,6 +59,7 @@ class App extends Component {
             updateFeature={this.state.updateFeature}
             USCurrencyFormat = {this.state.USCurrencyFormat}
             selected={this.state.selected}
+            features={this.props.features}
           />
           </section>
         </main>
