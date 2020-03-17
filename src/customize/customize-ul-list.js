@@ -8,7 +8,7 @@ export default class Customize extends Component {
         <form className="main__form">
             <h2>Customize your laptop</h2>
             <FieldSet 
-                feature={this.props.features} 
+                features={this.props.features} 
                 key={this.props.featureHash}
                 updateFeatures={this.props.updateFeature}
                 USCurrencyFormat = {this.props.USCurrencyFormat}
