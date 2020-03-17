@@ -11,7 +11,7 @@ export default class Fieldset extends Component {
           <fieldset className="feature" key={featureHash}>
             <legend className="feature__name">
               <h3>{features}</h3>
-              <ListItem itemHash={itemHash} options={options} feature={feature}/>
+              <ListItem itemHash={itemHash} options={options} feature={featureHash}/>
             </legend>
           </fieldset>
       );
