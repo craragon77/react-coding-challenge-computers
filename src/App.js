@@ -31,6 +31,7 @@ class App extends Component {
       }
     }
   };
+
 //this will stay in the App.js, but the state will be pushed down into customize the ul and li componenets
   updateFeature = (feature, newValue) => {
     const selected = Object.assign({}, this.state.selected);
@@ -48,18 +49,14 @@ class App extends Component {
         <main>
           {/*This title stays in the customize form*/}
           <Customize 
-            updateFeatures={this.state.updateFeature}
-            USCurrencyFormat = {this.state.USCurrencyFormat}
+            USCurrencyFormat = {USCurrencyFormat}
             selected={this.state.selected}
-            features={this.props.features}
           />
           {/*This title stays in the cart*/}
           <section className="main__summary">
           <Checkout 
-            updateFeature={this.state.updateFeature}
-            USCurrencyFormat = {this.state.USCurrencyFormat}
+            USCurrencyFormat = {USCurrencyFormat}
             selected={this.state.selected}
-            features={this.props.features}
           />
           </section>
         </main>

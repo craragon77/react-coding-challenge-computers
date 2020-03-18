@@ -10,7 +10,7 @@ export default class ListItem extends Component{
                 type="radio"
                 id={this.props.itemHash}
                 className="feature__option"
-                name={slugify(this.props.feature)}
+                name={slugify(this.props.features)}
                 checked={this.props.item.name === this.props.selected[this.props.feature].name}
                 onChange={e => this.updateFeature(this.props.feature, this.props.item)}
             />
