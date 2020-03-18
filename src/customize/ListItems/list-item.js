@@ -4,13 +4,12 @@ import slugify from 'slugify';
 export default class ListItem extends Component{
     render() {
         return (
-            //list item
             <div key={this.props.itemHash} className="feature__item">
             <input
                 type="radio"
                 id={this.props.itemHash}
                 className="feature__option"
-                name={slugify(this.props.features)}
+                name={slugify(this.props.feature)}
                 checked={this.props.item.name === this.props.selected[this.props.feature].name}
                 onChange={e => this.updateFeature(this.props.feature, this.props.item)}
             />
